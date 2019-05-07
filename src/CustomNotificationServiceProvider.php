@@ -6,6 +6,9 @@ use Illuminate\Support\ServiceProvider;
 
 class CustomNotificationServiceProvider extends ServiceProvider
 {
+    protected $commands = [
+        'Rezawikan\CustomNotifications\Commands\RestructureNotifications'
+    ];
     /**
      * Register services.
      *
@@ -13,7 +16,7 @@ class CustomNotificationServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->commands($this->commands);
     }
 
     /**

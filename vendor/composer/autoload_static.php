@@ -6,9 +6,25 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit8c0c28e806be6c9b0c27fcfc76537ed1
 {
+    public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'Rezawikan\\CustomNotifications\\' => 30,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Rezawikan\\CustomNotifications\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8c0c28e806be6c9b0c27fcfc76537ed1::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8c0c28e806be6c9b0c27fcfc76537ed1::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
