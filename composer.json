@@ -7,7 +7,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "rezawikan\\custom-notifications\\CustomNotificationServiceProvider"
+                "Rezawikan\\CustomNotifications\\CustomNotificationServiceProvider"
             ]
         }
     },
