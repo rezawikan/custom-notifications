@@ -1,0 +1,19 @@
+{
+    "name": "rezawikan/custom-notifications",
+    "description": "Custom notifications for Laravel",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "rezawikan\\custom-notifications\\CustomNotificationServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Rezawikan\\CustomNotifications\\": "src/"
+        }
+    }
+}
