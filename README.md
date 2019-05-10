@@ -91,6 +91,14 @@ class User extends Authenticatable
 
 ```
 
+Then you can run and use it in your controller or routes.
+```php
+  $user = User::find(1);
+  $comment = Comment::find(1);
+
+  $user->notify(new CommentCreated($comment));
+```
+
 ## Attribute
 There are attribute value on the $notification object. In this package, we have additional value.
 ```php
