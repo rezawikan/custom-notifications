@@ -7,7 +7,7 @@ Let's see how easily to setup.
 ## Installation
 You can install the package via composer:
 ```sh
-npm install rezawikan/custom-notifications
+composer require rezawikan/custom-notifications
 ```
 
 ## Usage
